@@ -50,3 +50,14 @@ plt.axvline(x=0, color='black', linewidth=0.8, linestyle='--')
 plt.plot(x,2*x+1)
 plt.grid()
 plt.plot(x,-(x**2))
+plt.show()
+
+print("-----------------------------------------------------------------------------------------------------")
+print("EJERCICIOS PARA SUBIR A GITHUB")
+# 1.Cree un vector de size = 720, con valores aleatorios
+# 2.Haga reshape de (120, 6)
+# 3.Haga la transpuesta de la matriz y cree dos copias, una usando order F y la otra usando order C
+# 4.Genere un subplot con 6 paneles, usando la versión “a mano”, y conproporciones diferentes
+# 5.En cada panel hacer un grafico diferente (plot, scatter, bar, histograma, pie, etc) , sus datos serán cada fila de la matriz anterior. 
+# 6.Poner títulos, labels,legends, cuadrículas.
+
