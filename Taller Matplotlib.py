@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-
+print("PRIMER PUNTO")
 x = np.arange(0, 360)
 x = np.radians(x)
 y = np.sin(x)
@@ -23,3 +23,18 @@ plt.plot(x,y, "m--", label =  "Función Seno")
 plt.plot(x,np.cos(x), "g", label = "Función Coseno")
 plt.legend(loc = "upper right")
 plt.show()
+
+print("-----------------------------------------------------------------------------------------------------")
+print("SEGUNDO PUNTO: GENERAR UN HISTOGRAMA")
+import seaborn as sns
+datos = np.random.randn(50000) *2 + 20  
+plt.title("Histograma")
+plt.xlabel("Valor x")
+plt.ylabel("Probabilidad")
+plt.xlim(12,30)
+plt.ylim(0,0.25)
+# Graficar la línea de densidad que sigue el borde del histograma
+sns.kdeplot(datos, color='m',linestyle="--", linewidth=1.5)
+plt.hist(datos, bins=150, density=True, alpha=0.2, color="red",linewidth=0.1, rwidth=1,edgecolor="black")
+plt.show()
+
